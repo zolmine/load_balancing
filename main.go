@@ -162,7 +162,8 @@ var serverPool ServerPool
 func main() {
 	var serverList string
 	var port int
-	flag.StringVar(&serverList, "wss://eth-mainnet.g.alchemy.com/v2/s8zGtV5Jtr7TPRnOmRW6LaS4I4tMjptX", "wss://polygon-mainnet.g.alchemy.com/v2/3z5KecNiLnFFeomwszKT2GPiInCZdfiE")
+	flag.StringVar(&serverList, "backends", "wss://polygon-mainnet.g.alchemy.com/v2/3z5KecNiLnFFeomwszKT2GPiInCZdfiE", "Load balanced backends, use commas to separate")
+	// flag.StringVar(&serverList, "backends", "wss://eth-mainnet.g.alchemy.com/v2/s8zGtV5Jtr7TPRnOmRW6LaS4I4tMjptX", "Load balanced backends, use commas to separate")
 	flag.IntVar(&port, "port", 3030, "Port to serve")
 	flag.Parse()
 

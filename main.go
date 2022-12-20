@@ -370,7 +370,7 @@ func handleWebsocket(w http.ResponseWriter, r *http.Request) {
 	}
 	headers := make(chan *types.Header)
 	sub, err := backendConn.SubscribeNewHead(context.Background(), headers)
-	fmt.Println(sub)
+	// fmt.Println(sub)
 	if err != nil {
 		log.Fatal(err)
 	}

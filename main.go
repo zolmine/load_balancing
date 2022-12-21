@@ -292,7 +292,6 @@
 // // 		}
 // // 	}()
 
-
 // // 	// Start the HTTP server and balance incoming requests across the backend servers.
 // // 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 // // 		server := servers.Next()
